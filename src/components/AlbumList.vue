@@ -27,7 +27,10 @@ export default {
   h3 {
     color: white;
   }
-
+  p {
+    margin: -0.3rem;
+    color: rgb(186, 175, 175);
+  }
   img {
     width: 100%;
   }

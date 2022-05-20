@@ -1,8 +1,8 @@
 <template>
   <main class="py-4">
-    <RicercaAlbum @searchedClick="saveAlbum($event)" />
     <div class="container">
-      <div class="row row-cols-5">
+      <RicercaAlbum @searchedClick="saveAlbum($event)" />
+      <div class="row row-cols-6">
         <AlbumList
           v-for="(items, index) in filterGenreArr"
           :key="index"
@@ -52,8 +52,7 @@ export default {
 </script>
 
 <style scoped>
-.main-container {
-  height: 50vh;
+main {
   background-color: rgb(61, 58, 58);
 }
 </style>
